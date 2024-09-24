@@ -104,8 +104,8 @@ property when you create the resource.</p>
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPDisk">
-[]GCPDisk
+<a href="#settings.gardener.cloud/v1alpha1.*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPDisk">
+[]*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPDisk
 </a>
 </em>
 </td>
@@ -120,7 +120,7 @@ must be created before you can assign them.</p>
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPGpu">
+<a href="#settings.gardener.cloud/v1alpha1.GCPGpu">
 GCPGpu
 </a>
 </em>
@@ -178,8 +178,8 @@ machine types.</p>
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPMetadata">
-[]GCPMetadata
+<a href="#settings.gardener.cloud/v1alpha1.*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPMetadata">
+[]*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPMetadata
 </a>
 </em>
 </td>
@@ -208,8 +208,8 @@ for this instance.</p>
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPNetworkInterface">
-[]GCPNetworkInterface
+<a href="#settings.gardener.cloud/v1alpha1.*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPNetworkInterface">
+[]*github.com/gardener/mcm-repos/machine-controller-manager-provider-gcp/pkg/api/v1alpha1.GCPNetworkInterface
 </a>
 </em>
 </td>
@@ -239,7 +239,7 @@ string
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPScheduling">
+<a href="#settings.gardener.cloud/v1alpha1.GCPScheduling">
 GCPScheduling
 </a>
 </em>
@@ -254,7 +254,7 @@ GCPScheduling
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPServiceAccount">
+<a href="#settings.gardener.cloud/v1alpha1.GCPServiceAccount">
 []GCPServiceAccount
 </a>
 </em>
@@ -301,10 +301,6 @@ string
 <h3 id="settings.gardener.cloud/v1alpha1.GCPDisk">
 <b>GCPDisk</b>
 </h3>
-<p>
-(<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
-</p>
 <p>
 <p>GCPDisk describes disks for GCP.</p>
 </p>
@@ -446,7 +442,7 @@ global/images/family/my-image-family</p>
 </td>
 <td>
 <em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPDiskEncryption">
+<a href="#settings.gardener.cloud/v1alpha1.GCPDiskEncryption">
 GCPDiskEncryption
 </a>
 </em>
@@ -513,7 +509,7 @@ will not write any &ldquo;empty&rdquo; values to the request</p>
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPDisk">GCPDisk</a>)
+<a href="#settings.gardener.cloud/v1alpha1.GCPDisk">GCPDisk</a>)
 </p>
 <p>
 <p>GCPDiskEncryption holds references to encryption data</p>
@@ -566,7 +562,7 @@ serviceAccount:name@projectIdgserviceaccount.com &ndash;role roles/cloudkms.cryp
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
+<a href="#settings.gardener.cloud/v1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
 </p>
 <p>
 <p>GCPGpu describes gpu configurations for GCP</p>
@@ -610,10 +606,6 @@ int64
 <h3 id="settings.gardener.cloud/v1alpha1.GCPMetadata">
 <b>GCPMetadata</b>
 </h3>
-<p>
-(<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
-</p>
 <p>
 <p>GCPMetadata describes metadata for GCP.</p>
 </p>
@@ -665,10 +657,6 @@ must be less than or equal to 262144 bytes (256 KiB).</p>
 <h3 id="settings.gardener.cloud/v1alpha1.GCPNetworkInterface">
 <b>GCPNetworkInterface</b>
 </h3>
-<p>
-(<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
-</p>
 <p>
 <p>GCPNetworkInterface describes network interfaces for GCP</p>
 </p>
@@ -748,7 +736,7 @@ are all valid URLs:
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
+<a href="#settings.gardener.cloud/v1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
 </p>
 <p>
 <p>GCPScheduling describes scheduling configuration for GCP.</p>
@@ -824,7 +812,7 @@ after the instance has been created.</p>
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#%23settings.gardener.cloud%2fv1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
+<a href="#settings.gardener.cloud/v1alpha1.GCPProviderSpec">GCPProviderSpec</a>)
 </p>
 <p>
 <p>GCPServiceAccount describes service accounts for GCP.</p>

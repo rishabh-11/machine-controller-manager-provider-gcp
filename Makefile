@@ -2,6 +2,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+ENSURE_MCM_MOD := $(shell go get github.com/gardener/machine-controller-manager@$$(go list -m -f "{{.Version}}" github.com/gardener/machine-controller-manager))
+MCM_HACK_DIR   := $(shell go list -m -f "{{.Dir}}" github.com/gardener/machine-controller-manager)/hack
+
+include $(MCM_HACK_DIR)/tools.mk
 -include .env
 export
 
@@ -94,5 +98,6 @@ clean:
 	@rm -f *linux-amd64
 	@rm -f *darwin-amd64
 
-generate:
+.PHONY: generate
+generate: $(GEN_CRD_API_REFERENCE_DOCS)
 	@./hack/api-reference/generate-spec-doc.sh
